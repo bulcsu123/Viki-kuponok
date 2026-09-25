@@ -1,0 +1,151 @@
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d3436;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#login-screen {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 380px;
+    width: 100%;
+}
+
+#login-screen h2 {
+    color: #d63031;
+    margin-top: 0;
+}
+
+#password-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 15px 0;
+    border: 2px solid #fab1a0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+#login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #e84393;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#login-btn:hover{
+    background-color: #d63031;
+}
+
+#error-msg {
+    color: #d63031;
+    font-weight: bold;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+#main-screen {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: #d63031;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.coupon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 5px 0 10px 0;
+    color: #2d3436;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #636e72;
+}
+
+.reedem-btn {
+    background-color: #00b894;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px;
+    transition: background 0.2s;
+}
+
+.redeem-btn:hover {
+    background-color: #00a884;
+}
+
+.card.redeemed {
+    opacity: 0.6;
+    background-color: #f1f2f6;
+}
+
+.card.redeemed .redeem-btn {
+    background-color: #b2bec3;
+    cursor: not-allowed;
+}
